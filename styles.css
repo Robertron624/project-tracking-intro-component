@@ -99,3 +99,85 @@ body {
     --light-grayish-blue: hsl(207, 33%, 95%);
 
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem 0;
+}
+
+header .logo {
+    width: 24px;
+}
+
+main {
+    padding: 2rem 1rem 5rem;
+}
+
+.text-container {
+    margin-top: 5rem;
+}
+
+.text-container .new {
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: var(--grayish-blue);
+    font-family: "barlow condensed", sans-serif;
+    letter-spacing: 5px;
+}
+
+.text-container .new span {
+    color: var(--light-grayish-blue);
+    background-color: var(--very-dark-blue);
+    padding: .2rem .35rem;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-right: .5rem;
+}
+
+.text-container h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.text-container p.planning {
+    font-size: .9rem;
+    color: var(--grayish-blue);
+    margin-bottom: 2rem;
+    max-width: 14rem;
+}
+
+.text-container .schedule {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.schedule button {
+    background-color: var(--red);
+    color: white;
+    padding: .5rem 0;
+    width: 10rem;
+    border-radius: 5px;
+    border: none;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.schedule p {
+    font-size: .6rem;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
