@@ -113,10 +113,10 @@ header .logo {
 }
 
 header .mobile-nav {
-    display: none;
     position: absolute;
     text-align: center;
-    top: 5rem;
+    top: -18rem;
+    border: none;
     /* center positioned absolut element */
     left: 50%;
     transform: translateX(-50%);

@@ -1,18 +1,26 @@
-const hamburgerMenu = document.querySelector('.mobile-hamburger img');
+const hamburgerMenu = document.querySelector(".mobile-hamburger img");
 
-const mobileMenu = document.querySelector('.mobile-nav');
+const mobileMenuModal = document.querySelector(".mobile-nav");
 
 let isMobileMenuOpen = false;
 
-hamburgerMenu.addEventListener('click', () => {
+hamburgerMenu.addEventListener("click", () => {
     if (isMobileMenuOpen) {
-        mobileMenu.style.display = 'none';
-        hamburgerMenu.src = '/images/icon-hamburger.svg';
+        hamburgerMenu.src = "/images/icon-hamburger.svg";
         isMobileMenuOpen = false;
     } else {
-        mobileMenu.style.display = 'block';
-        hamburgerMenu.src = '/images/icon-close.svg';
+        mobileMenuModal.showModal();
+        hamburgerMenu.src = "/images/icon-close.svg";
         isMobileMenuOpen = true;
     }
-}
-);  
+});
+
+// Close mobile menu when user clicks outside of it
+
+window.addEventListener("click", (e) => {
+    if (e.target == mobileMenuModal) {
+        mobileMenuModal.close();
+        hamburgerMenu.src = "/images/icon-hamburger.svg";
+        isMobileMenuOpen = false;
+    }
+});
