@@ -287,6 +287,20 @@ main {
         text-decoration: none;
     }
 
+    header .inner .desktop-links ul li a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background-color: var(--very-dark-blue);
+        transition: width 0.3s;
+        margin: -.2rem auto 0;
+    }
+
+    header .inner .desktop-links ul li a:hover::after {
+        width: 100%;
+    }
+
     header .inner .desktop-links .grey-dot {
         width: 8px;
         height: 8px;
@@ -347,6 +361,11 @@ main {
         padding: 0.8rem 0;  
         width: 12rem;
         font-size: 0.9rem;
+        transition: all 0.45s ease-in-out;
+    }
+
+    .schedule button:hover {
+        opacity: 0.7;
     }
 
     .schedule p {
