@@ -26,14 +26,10 @@
     <body>
       <header>
         <div class="background-shape">
-          
         </div>
-        <img class="logo" src="/images/logo.svg" alt="tracking logo">
-        <div class="mobile-hamburger">
-          <img src="/images/icon-hamburger.svg" alt="hamburger menu">
-        </div>
-        <dialog class="mobile-nav">
-          <nav>
+        <div class="inner">
+          <img class="logo" src="/images/logo.svg" alt="tracking logo">
+          <nav class="desktop-links">
             <ul>
               <li>
                 <a href="/product">Product</a>
@@ -45,11 +41,33 @@
                 <a href="/pricing">Pricing</a>
               </li>
             </ul>
+            <span class="grey-dot"></span>
+              <button class="login">
+                Login
+              </button>
           </nav>
-          <button class="login">
-            Login
-          </button>
-        </dialog>
+          <div class="mobile-hamburger">
+            <img src="/images/icon-hamburger.svg" alt="hamburger menu">
+          </div>
+          <dialog class="mobile-nav">
+            <nav>
+              <ul>
+                <li>
+                  <a href="/product">Product</a>
+                </li>
+                <li>
+                  <a href="/features">Features</a>
+                </li>
+                <li>
+                  <a href="/pricing">Pricing</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="login">
+              Login
+            </button>
+          </dialog>
+        </div>
       </header>
       <main>
         <div class="hero-container">
@@ -70,9 +88,6 @@
           </div>
         </section>
       </main>
-        <!-- Product Features Pricing Login New Monograph Dashboard Powerful insights
-        into your team Project planning and time tracking for agile teams
-        Schedule a demo to see a live preview -->
         <script src="index.js"></script>
     </body>
 </html>
