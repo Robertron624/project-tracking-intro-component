@@ -108,6 +108,17 @@ header {
     position: relative;
 }
 
+header .background-shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 20rem;
+    background-color: var(--light-grayish-blue);
+    z-index: -1;
+    border-radius: 0 0 0 50px;
+}
+
 header .logo {
     width: 24px;
 }
